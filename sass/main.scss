@@ -1,17 +1,6 @@
-:root {
-  --primmary-text-color: #757575;
-  --title-text-color: #212121;
-  --accent-text-color: #2196f3;
-  --background-page-color: #ffffff;
-  --background-hero-color: #c4c4c4;
-  --team-action-color: #f5f4fa;
-  --background-bottom-color: #2f303a;
-  --logo-top-color: #000000;
-  --bottom-text-color: rgba(255, 255, 255, 0.6);
-  --card-portfolio-color: #eeeeee;
-  --soc-icons-color: #afb1b8;
-  --button-form-color: #188ce8;
-}
+@import "./utils/vars";
+@import "./base/normalize";
+@import "./components/header";
 
 .page {
   background-color: var(--background-page-color);
