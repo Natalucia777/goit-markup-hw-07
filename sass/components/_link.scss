@@ -1,0 +1,19 @@
+%font-type {
+  padding-top: 31px;
+  padding-bottom: 31px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.link {
+  @extend %font-type;
+  color: var(--title-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}

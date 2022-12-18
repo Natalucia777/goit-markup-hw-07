@@ -14,10 +14,9 @@
   flex-direction: column;
   margin: 0 30px 0 0;
   padding: 0;
-}
-
-.list-benefits:nth-child(4) {
-  margin-right: 0;
+  &:nth-child(4) {
+      margin-right: 0;
+    }
 }
 
 .benefits-img {
@@ -49,6 +48,7 @@
   margin-top: 0;
   margin-bottom: 10px;
   align-items: flex-start;
+  color: var(--title-text-color);
 }
 
 .section-sub-title {
@@ -57,10 +57,6 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   margin: 0;
-}
-
-.section-sub-title,
-.benefits-sub-title {
   color: var(--title-text-color);
 }
 

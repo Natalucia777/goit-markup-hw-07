@@ -19,10 +19,9 @@
   display: flex;
   margin-right: 30px;
   position: relative;
-}
-
-.activity-sub-list:nth-child(3) {
-  margin-right: 0;
+  &:nth-child(3) {
+      margin-right: 0;
+    }
 }
 
 .activity-img.picture {

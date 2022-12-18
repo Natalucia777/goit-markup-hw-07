@@ -1,6 +1,11 @@
 /* team */
 .team {
   background-color: var(--team-action-color);
+  & .text {
+    font-size: 16px;
+    line-height: 1.19;
+    margin-bottom: 16px;
+  }
 }
 
 .team-box {
@@ -36,21 +41,13 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--background-page-color);
-}
-
-.team-sub-list:nth-child(4) {
-  margin-right: 0;
-  padding-bottom: 30px;
-}
-
-.team-sub-list .section-sub-title {
-  margin-bottom: 10px;
-}
-
-.team .text {
-  font-size: 16px;
-  line-height: 1.19;
-  margin-bottom: 16px;
+  &:nth-child(4) {
+    margin-right: 0;
+    padding-bottom: 30px;
+  }
+  & .section-sub-title {
+    margin-bottom: 10px;
+  }
 }
 
 .team-soc-list {
@@ -62,10 +59,9 @@
 .team-soc-items {
   width: 44px;
   height: 44px;
-}
-
-.team-soc-items:not(:last-child) {
-  margin-right: 10px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .team-soc-link {
@@ -80,10 +76,9 @@
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team-soc-link:hover,
-.team-soc-link:focus {
-  background-color: var(--accent-text-color);
-  fill: var(--background-page-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+    fill: var(--background-page-color);
+  }
 }

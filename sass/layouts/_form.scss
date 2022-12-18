@@ -1,5 +1,5 @@
 /* form */
-.form-title {
+.form__title {
   display: flex;
   justify-content: center;
   position: relative;
@@ -16,11 +16,11 @@
   margin: 0;
 }
 
-.form-name {
+.form__name {
   margin: 12px 0 0 0;
 }
 
-.form-label {
+.form__label {
   display: flex;
   flex-direction: column;
   margin-bottom: 4px;
@@ -33,7 +33,7 @@
   color: var(--primmary-text-color);
 }
 
-.form-input {
+.form__input {
   height: 40px;
   width: 100%;
   padding-left: 42px;
@@ -41,36 +41,36 @@
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:focus {
-    border-color: #2196f3;
+      border-color: #2196f3;
     }
   &:focus~.icon {
     fill: #2196f3;
-    }
+  }
 }
 
-.coment {
+.form__coment {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  .form-field>&:focus {
-    border-color: var(--accent-text-color);
-  }
 }
 
 textarea {
   resize: none;
 }
 
-.form-icon {
+.form__icon {
   display: flex;
   position: relative;
 }
 
-.form-field {
+.form__field {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
   position: relative;
   &:last-child {
-    margin-top: 10px;
+      margin-top: 10px;
+    }
+  &>.coment:focus {
+    border-color: var(--accent-text-color);
   }
   & textarea::placeholder {
     font-family: 'Roboto';
@@ -102,11 +102,10 @@ textarea {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.polisy-acsept {
+.pcolisy-acsept {
   margin: 20px 0 30px 0;
 }
-
-.label-policy {
+.label__policy {
   display: flex;
   width: 100%;
   margin-left: 0 0 0 12px;
@@ -123,7 +122,6 @@ textarea {
       border: 1px solid rgba(33, 33, 33, 0.2);
       border-radius: 4px;
     }
-  
     & input[type='checkbox'] {
       margin: 0;
       padding-left: 12px;
@@ -149,30 +147,31 @@ textarea {
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
+
 .input-checkbox {
   &:checked+label>span {
-    border: none;
-    background-color: var(--accent-text-color);
-  }
+      border: none;
+      background-color: var(--accent-text-color);
+    }
   &:checked+label>span svg {
     fill: var(--background-page-color);
   }
 }
 
-.policy-action {
+.policy__action {
   padding: 0;
   margin: 0 0 0 5px;
   color: var(--accent-text-color);
 }
 
-.button-form-action {
+.button-action {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
 }
 
-.button-form {
+.button-action__submit {
   padding: 0;
   margin: 0;
   display: flex;
@@ -194,7 +193,6 @@ textarea {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    background-color: var(--button-form-color);
-  }
+      background-color: var(--button-form-color);
+    }
 }
-
