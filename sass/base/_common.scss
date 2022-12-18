@@ -10,8 +10,6 @@ img {
   margin-top: 0;
 }
 .page {
-  // @include font(Roboto, normal, null, null, null, null, none);
   background-color: var(--background-page-color);
   color: var(--title-text-color);
-  
 }

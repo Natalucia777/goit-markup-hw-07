@@ -4,35 +4,20 @@
   justify-content: center;
   position: relative;
   align-items: center;
-  // font-family: 'Roboto';
-  // font-style: normal;
-  // font-weight: 700;
-  // font-size: 20px;
-  // line-height: 23px;
-  // letter-spacing: 0.03em;
   text-align: center;
   color: var(--title-text-color);
   padding: 0;
   margin: 0;
 }
-
 .form-name {
   margin: 12px 0 0 0;
 }
-
 .form-label {
   display: flex;
   flex-direction: column;
   margin-bottom: 4px;
-  // font-family: 'Roboto';
-  // font-style: normal;
-  // font-weight: 400;
-  // font-size: 12px;
-  // line-height: 14px;
-  // letter-spacing: 0.01em;
   color: var(--primmary-text-color);
 }
-
 .form-input {
   height: 40px;
   width: 100%;
@@ -47,23 +32,19 @@
     fill: #2196f3;
     }
 }
-
 .coment {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .form-field>&:focus {
     border-color: var(--accent-text-color);
   }
 }
-
 textarea {
   resize: none;
 }
-
 .form-icon {
   display: flex;
   position: relative;
 }
-
 .form-field {
   display: flex;
   flex-direction: column;
@@ -73,12 +54,6 @@ textarea {
     margin-top: 10px;
   }
   & textarea::placeholder {
-    // font-family: 'Roboto';
-    // font-style: normal;
-    // font-weight: 400;
-    // font-size: 12px;
-    // line-height: 14px;
-    // letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
   }
   & textarea {
@@ -89,7 +64,6 @@ textarea {
     background-color: var(--title-text-color);
   }
 }
-
 .icon {
   position: absolute;
   top: 50%;
@@ -101,21 +75,14 @@ textarea {
   color: var(--title-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .polisy-acsept {
   margin: 20px 0 30px 0;
 }
-
 .label-policy {
   display: flex;
   width: 100%;
   margin-left: 0 0 0 12px;
   padding: 0;
-  // font-family: 'Roboto';
-  // font-style: normal;
-  // font-weight: 400;
-  // font-size: 14px;
-  // letter-spacing: 0.03em;
   color: var(--primmary-text-color);
     & input {
       margin: 0;
@@ -123,15 +90,13 @@ textarea {
       border: 1px solid rgba(33, 33, 33, 0.2);
       border-radius: 4px;
     }
-  
-    & input[type='checkbox'] {
+      & input[type='checkbox'] {
       margin: 0;
       padding-left: 12px;
       border: 1px solid rgba(33, 33, 33, 0.2);
       border-radius: 4px;
     }
 }
-
 .checked-checkbox {
   display: block;
   width: 16px;
@@ -183,10 +148,6 @@ textarea {
   width: 200px;
   height: 50px;
   color: var(--background-page-color);
-  // font-weight: 700;
-  // font-size: 16px;
-  // line-height: 30px;
-  // letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;

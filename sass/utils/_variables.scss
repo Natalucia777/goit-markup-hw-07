@@ -26,189 +26,71 @@
 .page {
   @include font('Roboto', normal, null, null, null, null, none);
 }
-
-// .page {
-//   background-color: var(--background-page-color);
-//   color: var(--title-text-color);
-//   font-family: Roboto, sans-serif;
-//   font-style: normal;
-// }
-
 .logo {
   @include font('Raleway', normal, 700, 26px, 1.2, 0.03em, none);
-  // font-family: Raleway;
-  // font-style: normal;
-  // font-weight: 700;
-  // font-size: 26px;
-  // line-height: 1.2;
-  // letter-spacing: 0.03em;
-  // text-decoration: none;
-  
 }
-
 .section-title {
   @include font('Roboto', normal, 400, 36px, null, 0.03em, none);
-  // font-size: 36px;
-  // line-height: 1.17;
-  // letter-spacing: 0.03em;
 }
-
 .site-nav,
 .list-top {
   @include font('Roboto', normal, 500, 14px, 16px, 0.02em, none);
-  // font-weight: 500;
-  // font-size: 14px;
-  // line-height: 16px;
-  // letter-spacing: 0.02em;
 }
-
 .hero-title {
   @include font('Roboto', normal, 900, 44px, 1.36, 0.06em, none);
-  // font-weight: 900;
-  // font-size: 44px;
-  // line-height: 1.36;
-  // letter-spacing: 0.06em;
 }
-
 .hero-action {
   @include font('Roboto', normal, 700, 16px, 1.88, 0.06em, none);
-  // font-weight: 700;
-  // font-size: 16px;
-  // line-height: 1.88;
-  // letter-spacing: 0.06em;
 }
-
-
 .form-title {
   @include font('Roboto', normal, 700, 20px, 23px, 0.03em, none);
-  // font-family: 'Roboto';
-  // font-style: normal;
-  // font-weight: 700;
-  // font-size: 20px;
-  // line-height: 23px;
-  // text-align: center;
-  // letter-spacing: 0.03em;
 }
-
 .form-label,
 .form-field textarea::placeholder {
   @include font('Roboto', normal, 400, 12px, 14px, 0.01em, none);
-  // font-family: 'Roboto';
-  // font-style: normal;
-  // font-weight: 400;
-  // font-size: 12px;
-  // line-height: 14px;
-  // letter-spacing: 0.01em;
 }
 .label-policy {
   @include font('Roboto', normal, 400, 14px, null, 0.03em, none);
-  // font-family: 'Roboto';
-  // font-style: normal;
-  // font-weight: 400;
-  // font-size: 14px;
-  // letter-spacing: 0.03em;
 }
 .button-form {
   @include font('Roboto', normal, 700, 16px, 30px, 0.06em, none);
-  // font-weight: 700;
-  // font-size: 16px;
-  // line-height: 30px;
-  // letter-spacing: 0.06em;
 }
 %font-type {
   @include font('Roboto', normal, 500, 14px, 1.4, 0.02em, none);
-  // font-weight: 500;
-  // font-size: 14px;
-  // line-height: 1.4;
-  // letter-spacing: 0.02em;
-  // text-decoration: none;
 }
 .activity-title {
   @include font('Roboto', normal, 700, 14px, 16px, 0.03em, none);
-  // font-weight: 700;
-  // font-size: 14px;
-  // line-height: 16px;
-  // letter-spacing: 0.03em;
 }
 .benefits-sub-title {
   @include font('Roboto', normal, 400, 14px, 1.14, 0.03em, none);
-  // font-size: 14px;
-  // line-height: 1.14;
-  // letter-spacing: 0.03em;
 }
 .section-sub-title {
   @include font('Roboto', normal, 500, 16px, 1.19, 0.03em, none);
-  // font-weight: 500;
-  // font-size: 16px;
-  // line-height: 1.19;
-  // letter-spacing: 0.03em;
 }
-
 .team {
   & .text {
     @include font('Roboto', normal, 400, 16px, 1.19, 0.03em, none);
-    font-size: 16px;
-    line-height: 1.19;
-    margin-bottom: 16px;
   }
 }
-
-
-
 .text,
 .address-footer {
   @include font('Roboto', normal, 400, 14px, 1.71, 0.03em, none);
-  // font-family: Roboto, sans-serif;
-  // font-size: 14px;
-  // line-height: 1.71;
-  // letter-spacing: 0.03em;
 }
-// .address-footer {
-//   @include font('Roboto', normal, 400, 14px, 1.71, 0.03em, none);
-//   font-size: 14px;
-//   line-height: 1.71;
-//   letter-spacing: 0.03em;
-// }
 .bottom-items {
   @include font('Roboto', normal, 400, 14px, 24px, 0.03em, none);
-  // font-style: normal;
-  // font-weight: 400;
-  // font-size: 14px;
-  // line-height: 24px;
-  // letter-spacing: 0.03em;
 }
 .join-sub-title {
   @include font('Roboto', normal, 700, 14px, 16px, 0.03em, none);
-  // font-style: normal;
-  // font-weight: 700;
-  // font-size: 14px;
-  // line-height: 16px;
-  // letter-spacing: 0.03em;
 }
-
 .list-action {
   @include font('Roboto', normal, 500, 16px, 1.63, 0.03em, none);
-  // font-weight: 500;
-  // font-size: 16px;
-  // line-height: 1.63;
-  // letter-spacing: 0.03em;
 }
-
 .card-heading {
-@include font('Roboto', normal, 400, 18px, 36px, 0.06em, none);
-  // font-size: 18px;
-  // line-height: 36px;
-  // letter-spacing: 0.06em;
+  @include font('Roboto', normal, 400, 18px, 36px, 0.06em, none);
 }
 .card-text {
   @include font('Roboto', normal, 400, 16px, 1.88, 0.03em, none);
-  // font-size: 16px;
-  // line-height: 1.88;
-  // letter-spacing: 0.03em;
 }
 .card-cover-text {
   @include font('Roboto', normal, 400, 18px, 28px, 0.03em, none);
-  // font-size: 18px;
-  // line-height: 28px;
-  // letter-spacing: 0.03em;
 }
