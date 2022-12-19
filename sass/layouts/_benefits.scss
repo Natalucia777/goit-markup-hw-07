@@ -1,5 +1,5 @@
 /* benefits */
-.benefits-box {
+.information-box {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -8,8 +8,7 @@
   margin-bottom: 0;
   padding: 0;
 }
-
-.list-benefits {
+.information-box__item {
   display: flex;
   flex-direction: column;
   margin: 0 30px 0 0;
@@ -18,8 +17,7 @@
       margin-right: 0;
     }
 }
-
-.benefits-img {
+.information-box__img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,31 +29,17 @@
   background-color: var(--team-action-color);
   border-radius: 4px;
 }
-
-.benefits-svg {
+.information-box__svg {
   display: flex;
   padding: 0;
   margin: 0;
   width: 65.32px;
   height: 70px;
 }
-
-.benefits-sub-title {
+.information-box__sub-title {
   display: flex;
-  margin-top: 0;
+  margin: 0;
   margin-bottom: 10px;
   align-items: flex-start;
   color: var(--title-text-color);
-}
-
-.section-sub-title {
-  margin: 0;
-  color: var(--title-text-color);
-}
-
-.text {
-  display: inline-block;
-  color: var(--primmary-text-color);
-  margin: 0;
-  padding: 0;
 }

@@ -1,16 +1,16 @@
 /* header */
-.top-border {
+.header {
+  background-color: var(--background-page-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-.nav-top {
+.navigation {
   display: flex;
   align-items: center;
   margin-top: 0;
   margin-bottom: 0;
 }
-.site-nav {
-  @extend .nav-top;
+.navigation__list {
+  @extend .navigation;
   position: relative;
   padding: 0;
   margin: 0;
@@ -25,19 +25,16 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-
-.site-nav-link {
-  position: relative;
-  display: inline-flex;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.list-top {
+.navigation__item {
   position: relative;
   color: var(--accent-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  margin-right: 50px;
+  &:nth-child(3) {
+    margin-right: 0;
+  }
 }
-
 .current {
   position: relative;
   width: 100%;
@@ -55,18 +52,21 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-
-.top-adress {
+.adress-list {
+  display: flex;
+  margin-left: auto;
+}
+.navigation__adress {
   @extend %font-type;
   display: inline-flex;
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-right: 50px;
   color: var(--primmary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.adress-svg-envelope {
+.navigation__envelope {
   display: flex;
   padding: 0;
   margin: 0 10px 0 0;
@@ -79,8 +79,7 @@
     fill: var(--accent-text-color);
   }
 }
-
-.adress-svg-phone {
+.navigation__smartphone {
   display: flex;
   padding: 0;
   margin: 0 10px 0 0;
@@ -93,8 +92,7 @@
     fill: var(--accent-text-color);
   }
 }
-
-.top-tel {
+.navigation__phone {
   @extend %font-type;
   color: var(--primmary-text-color);
   display: flex;
@@ -105,25 +103,4 @@
   &:focus {
     color: var(--accent-text-color);
   }
-}
-
-.page-header {
-  background-color: var(--background-page-color);
-}
-
-.top-adress {
-  margin-right: 50px;
-}
-
-.list-top {
-  display: flex;
-  margin-right: 50px;
-  &:nth-child(3) {
-      margin-right: 0;
-  }
-}
-
-.adress-list {
-  display: flex;
-  margin-left: auto;
 }

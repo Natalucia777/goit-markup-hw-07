@@ -17,9 +17,9 @@
   font-family: $ffem;
   font-style: $fst;
   font-weight: $fw;
-  font-size: $fs;
+  font-size: $fs + px;
   line-height: $lh;
-  letter-spacing: $ls;
+  letter-spacing: $ls + em;
   text-decoration: $td;
 }
 
@@ -27,70 +27,70 @@
   @include font('Roboto', normal, null, null, null, null, none);
 }
 .logo {
-  @include font('Raleway', normal, 700, 26px, 1.2, 0.03em, none);
+  @include font('Raleway', normal, 700, 26, 1.2, 0.03, none);
 }
 .section-title {
-  @include font('Roboto', normal, 400, 36px, null, 0.03em, none);
+  @include font('Roboto', normal, 400, 36, null, 0.03, none);
 }
 .site-nav,
 .list-top {
-  @include font('Roboto', normal, 500, 14px, 16px, 0.02em, none);
+  @include font('Roboto', normal, 500, 14, 16px, 0.02, none);
 }
 .hero-title {
-  @include font('Roboto', normal, 900, 44px, 1.36, 0.06em, none);
+  @include font('Roboto', normal, 900, 44, 1.36, 0.06, none);
 }
 .hero-action {
-  @include font('Roboto', normal, 700, 16px, 1.88, 0.06em, none);
+  @include font('Roboto', normal, 700, 16, 1.88, 0.06, none);
 }
 .form-title {
-  @include font('Roboto', normal, 700, 20px, 23px, 0.03em, none);
+  @include font('Roboto', normal, 700, 20, 23px, 0.03, none);
 }
 .form-label,
 .form-field textarea::placeholder {
-  @include font('Roboto', normal, 400, 12px, 14px, 0.01em, none);
+  @include font('Roboto', normal, 400, 12, 14px, 0.01, none);
 }
 .label-policy {
-  @include font('Roboto', normal, 400, 14px, null, 0.03em, none);
+  @include font('Roboto', normal, 400, 14, null, 0.03, none);
 }
 .button-form {
-  @include font('Roboto', normal, 700, 16px, 30px, 0.06em, none);
+  @include font('Roboto', normal, 700, 16, 30px, 0.06, none);
 }
 %font-type {
-  @include font('Roboto', normal, 500, 14px, 1.4, 0.02em, none);
+  @include font('Roboto', normal, 500, 14, 1.4, 0.02, none);
 }
 .activity-title {
-  @include font('Roboto', normal, 700, 14px, 16px, 0.03em, none);
+  @include font('Roboto', normal, 700, 14, 16px, 0.03, none);
 }
 .benefits-sub-title {
-  @include font('Roboto', normal, 400, 14px, 1.14, 0.03em, none);
+  @include font('Roboto', normal, 400, 14, 1.14, 0.03, none);
 }
 .section-sub-title {
-  @include font('Roboto', normal, 500, 16px, 1.19, 0.03em, none);
+  @include font('Roboto', normal, 500, 16, 1.19, 0.03, none);
 }
 .team {
   & .text {
-    @include font('Roboto', normal, 400, 16px, 1.19, 0.03em, none);
+    @include font('Roboto', normal, 400, 16, 1.19, 0.03, none);
   }
 }
 .text,
 .address-footer {
-  @include font('Roboto', normal, 400, 14px, 1.71, 0.03em, none);
+  @include font('Roboto', normal, 400, 14, 1.71, 0.03, none);
 }
 .bottom-items {
-  @include font('Roboto', normal, 400, 14px, 24px, 0.03em, none);
+  @include font('Roboto', normal, 400, 14, 24px, 0.03, none);
 }
 .join-sub-title {
-  @include font('Roboto', normal, 700, 14px, 16px, 0.03em, none);
+  @include font('Roboto', normal, 700, 14, 16px, 0.03, none);
 }
 .list-action {
-  @include font('Roboto', normal, 500, 16px, 1.63, 0.03em, none);
+  @include font('Roboto', normal, 500, 16, 1.63, 0.03, none);
 }
 .card-heading {
-  @include font('Roboto', normal, 400, 18px, 36px, 0.06em, none);
+  @include font('Roboto', normal, 400, 18, 36px, 0.06, none);
 }
 .card-text {
-  @include font('Roboto', normal, 400, 16px, 1.88, 0.03em, none);
+  @include font('Roboto', normal, 400, 16, 1.88, 0.03, none);
 }
 .card-cover-text {
-  @include font('Roboto', normal, 400, 18px, 28px, 0.03em, none);
+  @include font('Roboto', normal, 400, 18, 28px, 0.03, none);
 }

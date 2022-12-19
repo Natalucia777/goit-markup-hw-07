@@ -16,6 +16,8 @@
 .page {
   font-family: "Roboto";
   font-style: normal;
+  font-size: px;
+  letter-spacing: em;
   text-decoration: none;
 }
 
@@ -129,7 +131,7 @@
   text-decoration: none;
 }
 
-.top-tel, .top-adress, .link {
+.navigation__phone, .navigation__adress, .link {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -313,7 +315,14 @@ img {
   padding: 94px 0 94px 0;
 }
 
-.top-tel, .top-adress, .link {
+.text {
+  display: inline-block;
+  color: var(--primmary-text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__phone, .navigation__adress, .link {
   padding-top: 31px;
   padding-bottom: 31px;
 }
@@ -347,8 +356,13 @@ img {
   color: var(--logo-top-color);
 }
 
+.logo-bottom {
+  color: var(--background-page-color);
+  margin-bottom: 20px;
+}
+
 /* section */
-.section-title {
+.section__title {
   margin-top: 0;
   margin-bottom: 50px;
   color: var(--title-text-color);
@@ -585,25 +599,26 @@ textarea {
 }
 
 /* header */
-.top-border {
+.header {
+  background-color: var(--background-page-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.nav-top, .site-nav {
+.navigation, .navigation__list {
   display: flex;
   align-items: center;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.site-nav {
+.navigation__list {
   position: relative;
   padding: 0;
   margin: 0;
   color: var(--accent-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.site-nav .link.current {
+.navigation__list .link.current {
   content: "";
   position: relative;
   display: flex;
@@ -612,16 +627,15 @@ textarea {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav-link {
-  position: relative;
-  display: inline-flex;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.list-top {
+.navigation__item {
   position: relative;
   color: var(--accent-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  margin-right: 50px;
+}
+.navigation__item:nth-child(3) {
+  margin-right: 0;
 }
 
 .current {
@@ -642,16 +656,22 @@ textarea {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.top-adress {
+.adress-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.navigation__adress {
   display: inline-flex;
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-right: 50px;
   color: var(--primmary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.adress-svg-envelope {
+.navigation__envelope {
   display: flex;
   padding: 0;
   margin: 0 10px 0 0;
@@ -660,11 +680,11 @@ textarea {
   fill: var(--primmary-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.adress-svg-envelope:hover, .adress-svg-envelope:focus {
+.navigation__envelope:hover, .navigation__envelope:focus {
   fill: var(--accent-text-color);
 }
 
-.adress-svg-phone {
+.navigation__smartphone {
   display: flex;
   padding: 0;
   margin: 0 10px 0 0;
@@ -673,40 +693,19 @@ textarea {
   fill: var(--primmary-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.adress-svg-phone:hover, .adress-svg-phone:focus {
+.navigation__smartphone:hover, .navigation__smartphone:focus {
   fill: var(--accent-text-color);
 }
 
-.top-tel {
+.navigation__phone {
   color: var(--primmary-text-color);
   display: flex;
   flex-direction: row;
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.top-tel:hover, .top-tel:focus {
+.navigation__phone:hover, .navigation__phone:focus {
   color: var(--accent-text-color);
-}
-
-.page-header {
-  background-color: var(--background-page-color);
-}
-
-.top-adress {
-  margin-right: 50px;
-}
-
-.list-top {
-  display: flex;
-  margin-right: 50px;
-}
-.list-top:nth-child(3) {
-  margin-right: 0;
-}
-
-.adress-list {
-  display: flex;
-  margin-left: auto;
 }
 
 /* hero */
@@ -722,13 +721,13 @@ textarea {
   background-size: cover;
 }
 
-.hero-box {
+.hero__box {
   flex-direction: column;
   margin-top: 106px;
   margin-bottom: 106px;
 }
 
-.hero-title {
+.hero__title {
   width: 696px;
   margin: 0 0 30px 0;
   color: var(--background-page-color);
@@ -736,7 +735,7 @@ textarea {
   text-transform: uppercase;
 }
 
-.hero-action {
+.button-action {
   display: flex;
   align-items: center;
   text-align: center;
@@ -751,15 +750,15 @@ textarea {
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-button .hero-action {
+button .button-action {
   padding: 0;
 }
-.hero-action:hover, .hero-action:focus {
+.button-action:hover, .button-action:focus {
   background-color: var(--button-form-color);
 }
 
 /* benefits */
-.benefits-box {
+.information-box {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -769,17 +768,17 @@ button .hero-action {
   padding: 0;
 }
 
-.list-benefits {
+.information-box__item {
   display: flex;
   flex-direction: column;
   margin: 0 30px 0 0;
   padding: 0;
 }
-.list-benefits:nth-child(4) {
+.information-box__item:nth-child(4) {
   margin-right: 0;
 }
 
-.benefits-img {
+.information-box__img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -792,7 +791,7 @@ button .hero-action {
   border-radius: 4px;
 }
 
-.benefits-svg {
+.information-box__svg {
   display: flex;
   padding: 0;
   margin: 0;
@@ -800,24 +799,12 @@ button .hero-action {
   height: 70px;
 }
 
-.benefits-sub-title {
+.information-box__sub-title {
   display: flex;
-  margin-top: 0;
+  margin: 0;
   margin-bottom: 10px;
   align-items: flex-start;
   color: var(--title-text-color);
-}
-
-.section-sub-title {
-  margin: 0;
-  color: var(--title-text-color);
-}
-
-.text {
-  display: inline-block;
-  color: var(--primmary-text-color);
-  margin: 0;
-  padding: 0;
 }
 
 /* activity */
@@ -825,7 +812,7 @@ button .hero-action {
   padding-top: 0;
 }
 
-.activity-box {
+.activity__box {
   display: flex;
   flex-direction: column;
 }
@@ -1020,11 +1007,6 @@ button .hero-action {
   display: flex;
   flex-direction: column;
   margin-right: 70px;
-}
-
-.logo-bottom {
-  color: var(--background-page-color);
-  margin-bottom: 20px;
 }
 
 .bottom-adress {
