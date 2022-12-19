@@ -4,13 +4,13 @@
   align-items: center;
 }
 
-.logo-blue {
+.logo--blue {
   display: flex;
   align-items: center;
   color: var(--accent-text-color);
 }
 
-.logo-top {
+.logo--top {
   display: flex;
   align-items: center;
   padding-top: 24px;
@@ -19,7 +19,7 @@
   color: var(--logo-top-color);
 }
 
-.logo-bottom {
+.logo--bottom {
   color: var(--background-page-color);
   margin-bottom: 20px;
 }

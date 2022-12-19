@@ -1,9 +1,8 @@
 /* futter */
-.bottom {
+.footer {
   background-color: var(--background-bottom-color);
 }
-
-.bottom-box {
+.footer__box {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -11,26 +10,31 @@
   padding-top: 64px;
   padding-bottom: 62px;
 }
-
-.box-adress {
+.footer__address {
   display: flex;
   flex-direction: column;
+  min-width: 231px;
   margin-right: 70px;
 }
-
-// .logo-bottom {
-//   color: var(--background-page-color);
-//   margin-bottom: 20px;
-// }
-
-.bottom-adress {
+.address__text {
   color: var(--background-page-color);
   margin-bottom: 9px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:hover {
+      color: var(--accent-text-color);
+  }
 }
-
-.bottom-text {
+.address__list {
+  margin: 0;
+}
+.address__item {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.address__email {
   color: var(--bottom-text-color);
-  text-decoration: none;
   margin-bottom: 9px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
@@ -38,42 +42,27 @@
     color: var(--accent-text-color);
   }
 }
-
-.bottom-tel {
+.address__tel {
   color: var(--bottom-text-color);
-  text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:hover {
     color: var(--accent-text-color);
   }
 }
-
-.bottom-items {
-  margin: 0;
-}
-
-.bottom-item {
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
-
 .box-join {
   display: flex;
   flex-direction: column;
   margin-right: 93px;
 }
-
-.join-sub-title {
+.box-join__title {
   margin-top: 12px;
   margin-bottom: 20px;
   padding: 0;
   text-transform: uppercase;
   color: var(--background-page-color);
 }
-
-.join-soc {
+.box-join__soc {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,8 +70,7 @@
   margin-right: 0;
   padding: 0;
 }
-
-.join-soc-items {
+.box-join__items {
   display: flex;
   padding: 0;
   margin: 0;
@@ -92,8 +80,7 @@
     margin-right: 10px;
   }
 }
-
-.join-soc-link {
+.box-join__link {
   width: 100%;
   height: 100%;
   padding: 0;
@@ -123,14 +110,12 @@
     margin-bottom: 20px;
   }
 }
-
 .connect {
   display: flex;
   flex-direction: row;
   margin: 0;
   width: 100%;
 }
-
 .connect-input {
   display: flex;
   align-items: center;
@@ -149,7 +134,6 @@
     border-color: var(--accent-text-color);
   }
 }
-
 .icon-send {
   display: flex;
   position: relative;
