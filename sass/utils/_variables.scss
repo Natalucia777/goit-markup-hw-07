@@ -30,18 +30,23 @@
   @include font('Raleway', normal, 700, 26, 1.2, 0.03, none);
 }
 .section-title {
-  @include font('Roboto', normal, 400, 36, null, 0.03, none);
+  @include font('Roboto', normal, 700, 36, 1.17, 0.03, none);
 }
-.site-nav,
-.list-top {
+.navigation__list,
+.navigation__item {
   @include font('Roboto', normal, 500, 14, 16px, 0.02, none);
 }
-.hero-title {
+.hero__title {
   @include font('Roboto', normal, 900, 44, 1.36, 0.06, none);
 }
-.hero-action {
+.button-action {
   @include font('Roboto', normal, 700, 16, 1.88, 0.06, none);
 }
+
+
+
+
+
 .form-title {
   @include font('Roboto', normal, 700, 20, 23px, 0.03, none);
 }
@@ -58,13 +63,18 @@
 %font-type {
   @include font('Roboto', normal, 500, 14, 1.4, 0.02, none);
 }
-.activity-title {
+
+
+
+
+.set-list__title,
+.information-box__sub-title {
   @include font('Roboto', normal, 700, 14, 16px, 0.03, none);
 }
-.benefits-sub-title {
-  @include font('Roboto', normal, 400, 14, 1.14, 0.03, none);
-}
-.section-sub-title {
+// .benefits-sub-title {
+//   @include font('Roboto', normal, 400, 14, 1.14, 0.03, none);
+// }
+.set-img__title {
   @include font('Roboto', normal, 500, 16, 1.19, 0.03, none);
 }
 .team {
@@ -72,6 +82,9 @@
     @include font('Roboto', normal, 400, 16, 1.19, 0.03, none);
   }
 }
+
+
+
 .text,
 .address-footer {
   @include font('Roboto', normal, 400, 14, 1.71, 0.03, none);

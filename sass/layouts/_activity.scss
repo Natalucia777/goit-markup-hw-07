@@ -2,20 +2,17 @@
 .activity {
   padding-top: 0;
 }
-
 .activity__box {
   display: flex;
   flex-direction: column;
 }
-
-.activity-sub {
+.set-list {
   display: flex;
   flex-direction: row;
   margin: 0;
   padding: 0;
 }
-
-.activity-sub-list {
+.set-list__item {
   display: flex;
   margin-right: 30px;
   position: relative;
@@ -23,12 +20,10 @@
       margin-right: 0;
     }
 }
-
-.activity-img.picture {
+.set-list__img.picture {
   margin-bottom: 0;
 }
-
-.activity-title {
+.set-list__title {
   position: absolute;
   width: 370px;
   height: 70px;

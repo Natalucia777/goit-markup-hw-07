@@ -1,10 +1,13 @@
 /* clients */
-.clients-box {
+.clients {
   display: flex;
   flex-direction: column;
 }
-
-.clients-title {
+.clients__title {
+  margin: 0;
+  padding: 0;
+}
+.img-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,8 +16,7 @@
   margin: 50px 0 0 0;
   padding: 0;
 }
-
-.list-clients {
+.img-list__item {
   display: flex;
   margin: 0 30px 0 0;
   padding: 0;
@@ -22,10 +24,9 @@
   height: 92px;
   &:nth-child(6) {
       margin-right: 0;
-    }
+  }
 }
-
-.clients-link {
+.img-list__link {
   width: 100%;
   height: 100%;
   padding: 0;
@@ -41,8 +42,7 @@
     fill: var(--accent-text-color);
   }
 }
-
-.clients-img {
+.img-list__img {
   display: flex;
   padding: 0;
   margin: 0;
@@ -51,8 +51,7 @@
   justify-content: center;
   align-items: center;
 }
-
-.clients-svg {
+.img-list__svg {
   display: flex;
   padding: 0;
   margin: 0;
