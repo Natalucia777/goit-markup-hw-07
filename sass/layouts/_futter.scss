@@ -99,24 +99,21 @@
     fill: var(--background-page-color);
   }
 }
-
 .box-subscription {
   display: flex;
   flex-direction: column;
   margin: 0;
   width: 100%;
   justify-content: flex-end;
-  & .join-sub-title {
-    margin-bottom: 20px;
+}
+.box-subscription__join {
+  @extend .box-join__title;
+  margin-bottom: 20px;
+}
+.box-subscription__connect {
+  @include flex-row();
   }
-}
-.connect {
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  width: 100%;
-}
-.connect-input {
+.box-subscription__input {
   display: flex;
   align-items: center;
   height: 50px;
@@ -134,7 +131,7 @@
     border-color: var(--accent-text-color);
   }
 }
-.icon-send {
+.form-action__send {
   display: flex;
   position: relative;
   margin: 0 0 0 10px;

@@ -14,10 +14,12 @@
 }
 
 .page {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-size: px;
-  letter-spacing: em;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
@@ -32,7 +34,7 @@
 }
 
 .section-title {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -43,7 +45,7 @@
 
 .navigation__list,
 .navigation__item {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -53,7 +55,7 @@
 }
 
 .hero__title {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -63,7 +65,7 @@
 }
 
 .button-action {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -73,7 +75,7 @@
 }
 
 .form-title {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -83,7 +85,7 @@
 }
 
 .form-field textarea::-moz-placeholder {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -93,7 +95,7 @@
 }
 
 .form-field textarea:-ms-input-placeholder {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -104,7 +106,7 @@
 
 .form-label,
 .form-field textarea::placeholder {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -114,7 +116,7 @@
 }
 
 .label-policy {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -122,8 +124,9 @@
   text-decoration: none;
 }
 
-.button-form {
-  font-family: "Roboto";
+.button-form,
+.form-action__button {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -133,7 +136,7 @@
 }
 
 .navigation__phone, .navigation__adress, .link {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -144,7 +147,7 @@
 
 .set-list__title,
 .information-box__sub-title {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -154,7 +157,7 @@
 }
 
 .set-img__title {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -164,7 +167,7 @@
 }
 
 .team .text {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -175,7 +178,7 @@
 
 .text,
 .address__text {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -186,7 +189,7 @@
 
 .address__email,
 .address__tel {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -195,8 +198,8 @@
   text-decoration: none;
 }
 
-.box-join__title {
-  font-family: "Roboto";
+.box-join__title, .box-subscription__join {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -205,8 +208,8 @@
   text-decoration: none;
 }
 
-.list-action {
-  font-family: "Roboto";
+.nav-list__btn {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -215,8 +218,18 @@
   text-decoration: none;
 }
 
-.card-heading {
-  font-family: "Roboto";
+.card-set__text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.card-set__title {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -225,22 +238,12 @@
   text-decoration: none;
 }
 
-.card-text {
-  font-family: "Roboto";
+.card-set__type {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-}
-
-.card-cover-text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
@@ -389,7 +392,7 @@ img {
   transform: translate(-50%, -50%) scale(0) rotate(-90deg);
 }
 
-.modal-close {
+.modal__button {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -400,7 +403,7 @@ img {
   border-radius: 50%;
 }
 
-.modal-close-x {
+.modal__svg {
   width: 100%;
   height: 100%;
   padding: 0;
@@ -409,14 +412,8 @@ img {
   align-items: center;
 }
 
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
 /* form */
-.form-title {
+.form__title {
   display: flex;
   justify-content: center;
   position: relative;
@@ -427,18 +424,23 @@ img {
   margin: 0;
 }
 
-.form-name {
+.form__name {
   margin: 12px 0 0 0;
 }
 
-.form-label {
+.form__label {
   display: flex;
   flex-direction: column;
   margin-bottom: 4px;
   color: var(--primmary-text-color);
 }
 
-.form-input {
+.form__icon {
+  display: flex;
+  position: relative;
+}
+
+.form__input {
   height: 40px;
   width: 100%;
   padding-left: 42px;
@@ -446,17 +448,17 @@ img {
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-input:focus {
+.form__input:focus {
   border-color: #2196f3;
 }
-.form-input:focus ~ .icon {
+.form__input:focus ~ .icon {
   fill: #2196f3;
 }
 
 .coment {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-field > .coment:focus {
+.form__field > .coment:focus {
   border-color: var(--accent-text-color);
 }
 
@@ -464,34 +466,29 @@ textarea {
   resize: none;
 }
 
-.form-icon {
-  display: flex;
-  position: relative;
-}
-
-.form-field {
+.form__field {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
   position: relative;
 }
-.form-field:last-child {
+.form__field:last-child {
   margin-top: 10px;
 }
-.form-field textarea::-moz-placeholder {
+.form__field textarea::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-.form-field textarea:-ms-input-placeholder {
+.form__field textarea:-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-.form-field textarea::placeholder {
+.form__field textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-.form-field textarea {
+.form__field textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.form-field > label input {
+.form__field > label input {
   background-color: var(--title-text-color);
 }
 
@@ -511,20 +508,20 @@ textarea {
   margin: 20px 0 30px 0;
 }
 
-.label-policy {
+.polisy-acsept__label {
   display: flex;
   width: 100%;
   margin-left: 0 0 0 12px;
   padding: 0;
   color: var(--primmary-text-color);
 }
-.label-policy input {
+.polisy-acsept__label input {
   margin: 0;
   padding: 0 0 0 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.label-policy input[type=checkbox] {
+.polisy-acsept__label input[type=checkbox] {
   margin: 0;
   padding-left: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -549,45 +546,45 @@ textarea {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-checkbox:checked + label > span {
+.polisy-acsept__input:checked + label > span {
   border: none;
   background-color: var(--accent-text-color);
 }
-.input-checkbox:checked + label > span svg {
+.polisy-acsept__input:checked + label > span svg {
   fill: var(--background-page-color);
 }
 
-.policy-action {
+.polisy-acsept__action {
   padding: 0;
   margin: 0 0 0 5px;
   color: var(--accent-text-color);
 }
 
-.button-form-action {
+.form-action {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
 }
 
-.button-form {
+.form-action__button {
   padding: 0;
   margin: 0;
   display: flex;
   align-items: center;
   text-align: center;
-  justify-content: center;
   cursor: pointer;
+  justify-content: center;
+  background-color: var(--accent-text-color);
+  color: var(--background-page-color);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 200px;
   height: 50px;
-  color: var(--background-page-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: none;
-  border-radius: 4px;
-  background-color: var(--accent-text-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-form:hover, .button-form:focus {
+.form-action__button:hover, .form-action__button:focus {
   background-color: var(--button-form-color);
 }
 
@@ -729,25 +726,27 @@ textarea {
 }
 
 .button-action {
+  padding: 0;
+  margin: 0;
   display: flex;
   align-items: center;
   text-align: center;
   cursor: pointer;
-  min-width: 216px;
-  min-height: 50px;
   justify-content: center;
   background-color: var(--accent-text-color);
   color: var(--background-page-color);
-  border: 0;
+  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-button .button-action {
-  padding: 0;
+  min-width: 216px;
+  min-height: 50px;
 }
 .button-action:hover, .button-action:focus {
   background-color: var(--button-form-color);
+}
+button .button-action {
+  padding: 0;
 }
 
 /* benefits */
@@ -1055,7 +1054,7 @@ button .button-action {
   margin-right: 93px;
 }
 
-.box-join__title {
+.box-join__title, .box-subscription__join {
   margin-top: 12px;
   margin-bottom: 20px;
   padding: 0;
@@ -1108,18 +1107,19 @@ button .button-action {
   width: 100%;
   justify-content: flex-end;
 }
-.box-subscription .join-sub-title {
+
+.box-subscription__join {
   margin-bottom: 20px;
 }
 
-.connect {
+.box-subscription__connect {
   display: flex;
   flex-direction: row;
   margin: 0;
   width: 100%;
 }
 
-.connect-input {
+.box-subscription__input {
   display: flex;
   align-items: center;
   height: 50px;
@@ -1133,11 +1133,11 @@ button .button-action {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: rgba(255, 255, 255, 0.6);
 }
-.connect-input:focus, .connect-input:hover {
+.box-subscription__input:focus, .box-subscription__input:hover {
   border-color: var(--accent-text-color);
 }
 
-.icon-send {
+.form-action__send {
   display: flex;
   position: relative;
   margin: 0 0 0 10px;
@@ -1150,35 +1150,35 @@ button .button-action {
   align-items: center;
 }
 
-.portfolio-nav-list {
+.nav {
   display: flex;
   flex-direction: row;
   margin-bottom: 50px;
 }
 
-.action-btn {
+.nav__action {
   margin-right: 8px;
 }
-.action-btn:nth-child(5) {
+.nav__action:nth-child(5) {
   margin-right: 0;
 }
-.action-btn:first-child .list-action {
+.nav__action:first-child .nav-list__btn {
   min-width: 73px;
 }
-.action-btn:nth-child(2) .list-action {
+.nav__action:nth-child(2) .nav-list__btn {
   min-width: 125px;
 }
-.action-btn:nth-child(3) .list-action {
+.nav__action:nth-child(3) .nav-list__btn {
   min-width: 112px;
 }
-.action-btn:nth-child(4) .list-action {
+.nav__action:nth-child(4) .nav-list__btn {
   min-width: 103px;
 }
-.action-btn:nth-child(5) .list-action {
+.nav__action:nth-child(5) .nav-list__btn {
   min-width: 130px;
 }
 
-.list-action {
+.nav-list__btn {
   background-color: var(--team-action-color);
   color: var(--title-text-color);
   cursor: pointer;
@@ -1189,7 +1189,7 @@ button .button-action {
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.list-action:hover, .list-action:focus, .list-action:active {
+.nav-list__btn:hover, .nav-list__btn:focus, .nav-list__btn:active {
   background-color: var(--accent-text-color);
   color: var(--background-page-color);
   border-bottom: 0;
@@ -1204,22 +1204,22 @@ button .button-action {
   list-style: none;
 }
 
-.card-set > .card-list {
+.card-set > .card-set__list {
   flex-basis: calc(100/3 - 30px);
   margin-top: 30px;
   margin-left: 30px;
 }
-.card-list:nth-child(3n) {
+.card-set__list:nth-child(3n) {
   margin-right: 0;
 }
-.card-list:nth-last-child(-n+3) {
+.card-set__list:nth-last-child(-n+3) {
   margin-bottom: 0;
 }
-.card-list:hover .card-cover-text {
+.card-set__list:hover .card-set__text {
   transform: translateY(0);
 }
 
-.card-list-item {
+.card-set__item {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -1227,33 +1227,33 @@ button .button-action {
   text-decoration: none;
   transition: box-sizing 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.card-list-item:hover {
+.card-set__item:hover {
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.card-heading {
+.card-set__title {
   color: var(--title-text-color);
   padding: 0;
   margin: 0 0 4px 0;
 }
 
-.card-text {
+.card-set__type {
   padding: 0;
   margin: 0;
 }
 
-.item-img {
+.card-set__img {
   display: flex;
 }
 
-.card-list-thumb {
+.card-set__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.card-cover-text {
+.card-set__text {
   position: absolute;
   top: 0;
   color: var(--background-page-color);
@@ -1264,18 +1264,18 @@ button .button-action {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
 }
-.card-cover-text::-webkit-scrollbar {
+.card-set__text::-webkit-scrollbar {
   width: 1em;
 }
-.card-cover-text::-webkit-scrollbar-track {
+.card-set__text::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
-.card-cover-text::-webkit-scrollbar-thumb {
+.card-set__text::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
 }
 
-.card-content {
+.card-set__content {
   display: block;
   box-sizing: border-box;
   padding: 20px 24px 20px 24px;

@@ -1,5 +1,5 @@
 /* form */
-.form-title {
+.form__title {
   display: flex;
   justify-content: center;
   position: relative;
@@ -9,16 +9,20 @@
   padding: 0;
   margin: 0;
 }
-.form-name {
+.form__name {
   margin: 12px 0 0 0;
 }
-.form-label {
+.form__label {
   display: flex;
   flex-direction: column;
   margin-bottom: 4px;
   color: var(--primmary-text-color);
 }
-.form-input {
+.form__icon {
+  display: flex;
+  position: relative;
+}
+.form__input {
   height: 40px;
   width: 100%;
   padding-left: 42px;
@@ -34,18 +38,14 @@
 }
 .coment {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  .form-field>&:focus {
+  .form__field>&:focus {
     border-color: var(--accent-text-color);
   }
 }
 textarea {
   resize: none;
 }
-.form-icon {
-  display: flex;
-  position: relative;
-}
-.form-field {
+.form__field {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -78,7 +78,7 @@ textarea {
 .polisy-acsept {
   margin: 20px 0 30px 0;
 }
-.label-policy {
+.polisy-acsept__label {
   display: flex;
   width: 100%;
   margin-left: 0 0 0 12px;
@@ -114,7 +114,7 @@ textarea {
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
-.input-checkbox {
+.polisy-acsept__input {
   &:checked+label>span {
     border: none;
     background-color: var(--accent-text-color);
@@ -123,39 +123,19 @@ textarea {
     fill: var(--background-page-color);
   }
 }
-
-.policy-action {
+.polisy-acsept__action {
   padding: 0;
   margin: 0 0 0 5px;
   color: var(--accent-text-color);
 }
-
-.button-form-action {
+.form-action {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
 }
-
-.button-form {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  cursor: pointer;
+.form-action__button {
+  @include btn();
   width: 200px;
   height: 50px;
-  color: var(--background-page-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: none;
-  border-radius: 4px;
-  background-color: var(--accent-text-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    background-color: var(--button-form-color);
-  }
 }
-
